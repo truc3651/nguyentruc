@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ng. Truc</title>
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{img/avatar.jpg}" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d9150e3fa6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-200 py-7">
+    <div class="container mx-auto px-10">
+        <div class="flex flex-auto">
+            <p class="text-2xl text-red-400 font-bold subpixel-antialiased capitalize">
+                nguyễn <span class="text-black">trúc</span>
+            </p>
+            <div class="ml-10 space-x-4 py-2">
+                <a href="https://www.facebook.com/Trucunomas/"><i class="fab fa-facebook fa-lg text-red-400"></i
+          ></a>
+                <a href="https://www.instagram.com/dark_profesor/"><i class="fab fa-instagram fa-lg text-red-400"></i
+          ></a>
+                <a href="https://github.com/truc3651"><i class="fab fa-github fa-lg text-red-400"></i
+          ></a>
+                <a href="mailto:thanhtre3651@gmail.com"><i class="far fa-envelope fa-lg text-red-400"></i
+          ></a>
+            </div>
+        </div>
+
+        <div class="md:flex md:justify-between">
+            <div class="md:mt-20 mt-6">
+                <p class="md:text-2xl text-lg font-semibold">Greetings,</p>
+                <p class="md:text-4xl text-xl font-bold md:mt-2">
+                    This is <span class="text-red-400">Nguyễn Trúc</span>
+                </p>
+                <p class="text-extralight md:text-lg">Professional Java developer @trucstre</p>
+                <div class="flex space-x-2 mt-4">
+                    <button class="bg-red-400 hover:bg-red-500 md:px-5 px-3 py-2 rounded-md font-semibold text-white shadow text-sm md:text-base focus:outline-none focus:ring-4 focus:ring-gray-500">
+                Learn more about me
+                </button>
+                    <button class="hover:bg-gray-100 md:px-5 px-3 py-2 rounded-md border-2 border-red-400 font-semibold text-red-400 shadow text-sm md:text-base focus:outline-none focus:ring-4 focus:ring-gray-500">
+                See my works
+                </button>
+                </div>
+            </div>
+
+            <img th:src="@{img/developer.png}" class="w-1/2 mx-auto" alt="" />
+        </div>
+        <div class="flex items-center justify-center mt-3 mb-10">
+            <i class="fas fa-caret-down fa-2x text-red-400"></i>
+        </div>
+    </div>
+    <div class="bg-gray-400 w-full h-0.5"></div>
+    <div class="container px-10 pt-10">
+        <p class="text-red-400 font-bold text-xl underline">
+            Let's know <span class="text-black underline">about me</span>
+        </p>
+        <p class="mt-3 text-semibold text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, atque? Ab ad provident sequi culpa labore velit, aperiam dignissimos nemo iste sunt earum quae? Cupiditate atque perspiciatis suscipit excepturi accusantium architecto labore dicta harum,
+            est quisquam quis nulla facilis officia omnis reiciendis, porro beatae possimus, totam rem. Excepturi rem quisquam exercitationem quidem vel enim magni quibusdam, impedit error iure quasi, ratione nobis ipsum numquam laborum minus tenetur
+            nostrum voluptatum amet veniam repellendus magnam? Harum eum eos eligendi, reiciendis, ducimus ea adipisci accusamus reprehenderit nobis natus molestias, tenetur expedita necessitatibus inventore cumque! Qui, nulla. A impedit natus tenetur
+            dignissimos? Nemo, excepturi?
+        </p>
+        <div class="flex items-center justify-center my-3">
+            <button class="mx-auto my-10 bg-red-400 hover:bg-red-500 px-5 py-2 rounded-md font-semibold text-white shadow focus:outline-none focus:ring-4 focus:ring-gray-500">
+          Download CV
+        </button>
+        </div>
+    </div>
+    <div class="bg-gray-400 w-full h-0.5"></div>
+    <div class="container px-10 py-10">
+        <p class="text-red-400 font-bold text-xl underline">
+            My exclusive <span class="text-black underline">services</span>
+        </p>
+        <div class="grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-6 mt-10">
+
+            <div class=" bg-pink-400 rounded-md overflow-hidden">
+                <img th:src="@{photos/youtube-clone.jpg}" alt="" />
+                <a href="https://java4.herokuapp.com/" type="button" class="hover:no-underline text-center bg-gray-600 w-full py-2 rounded-md font-semibold text-white">
+                    Youtube clone
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-red-400 my-3 text-center py-10">
+        <p class="text-white font-light text-md">Do you need</p>
+        <p class="text-white font-bold mb-2 text-lg">
+            develop works for your company?
+        </p>
+        <button class="bg-white px-6 py-1 rounded-md text-center text-red-400 font-semibold shadow hover:bg-yellow-100 focus:outline-none focus:ring-4 focus:ring-gray-500">
+        Call me
+      </button>
+    </div>
+    <form action="/contact" method="POST" th:object="${contactForm}" class="my-3 text-center py-10">
+        <p class="text-black text-md">Fill the form</p>
+        <p class="text-black font-bold mb-7 text-lg">
+            to get discount on every project
+        </p>
+        <p class="text-green-500 text-lg" th:text="${mess}"></p>
+        <div class="flex flex-col md:w-1/2 w-3/4 mx-auto space-y-4">
+            <input type="text" th:field="*{fullname}" class="rounded-md px-6 py-2 placeholder-gray-300 shadow-md focus:outline-none focus:ring-4 focus:ring-gray-500" placeholder="Your name" />
+            <input type="text" th:field="*{email}" class="rounded-md px-6 py-2 placeholder-gray-300 shadow-md focus:outline-none focus:ring-4 focus:ring-gray-500" placeholder="Email address" />
+            <input type="text" th:field="*{phoneNumber}" class="rounded-md px-6 py-2 placeholder-gray-300 shadow-md focus:outline-none focus:ring-4 focus:ring-gray-500" placeholder="Phone number" />
+            <textarea name="message" id="message" th:text="${message}" cols="30" rows="10" class="my-2 rounded-md px-6 py-2 placeholder-gray-300 shadow-md focus:outline-none focus:ring-4 focus:ring-gray-500" placeholder="Message"></textarea>
+        </div>
+        <button class="mt-4 bg-red-400 hover:bg-red-500 px-10 py-2 text-sm md:text-lg text-white font-semibold rounded-md shadow">
+        SUBMIT THE FORM
+      </button>
+    </form>
+    <div class="bg-gray-700 my-3 text-center py-10">
+        <p class="text-white font-light text-md">Follow and Contact me</p>
+        <div class="mx-8 space-x-4 py-2">
+            <a href="https://www.facebook.com/Trucunomas/"><i class="fab fa-facebook fa-lg text-red-400"></i
+        ></a>
+            <a href="https://www.instagram.com/dark_profesor/"><i class="fab fa-instagram fa-lg text-red-400"></i
+        ></a>
+            <a href="https://github.com/truc3651"><i class="fab fa-github fa-lg text-red-400"></i
+        ></a>
+            <a href="mailto:thanhtre3651@gmail.com"><i class="far fa-envelope fa-lg text-red-400"></i
+        ></a>
+        </div>
+    </div>
+    <div class="mx-auto text-center my-8">
+        <img th:src="@{img/avatar.jpg}" class="mx-auto w-16 h-16 rounded-full mb-2 border-4 border-light-blue-500" alt="" />
+        <p class="text-semibold">Thanks for your concern, that's all folks</p>
+    </div>
+</body>
+
+</html>
