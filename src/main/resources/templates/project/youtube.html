@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments :: header">
+</head>
+<body class="bg-light">
+	<!-- https://java4.herokuapp.com/ -->
+	
+	<div class="container my-5 p-0">
+		<div class="row p-0">
+			<div class="col-6">
+				<img th:src="@{photos/youtube-clone.jpg}" class="w-100">
+			</div>
+			<div class="col-6 ">
+				<h3>Youtube clone</h3>
+				<hr>
+				<h5>Build with</h5>
+				<p>Spring Boot 4, H2 database, Websocket, Stomp JS, Infinite scrolling technology, 
+				Youtube API</p>
+				<h5>Deployment platform</h5>
+				<p>Heroku</p>
+				<h5>Blow your mind</h5>
+				<a href="https://java4.herokuapp.com/login">Youtube clone project</a>
+				
+				<div class="my-2 border-top border-top-1 border-top-secondary w-50">
+					<p class="mt-2">Please sign in with this credential:</p>
+					<ul class="list-unstyled" style="margin-top: -10px">
+						<li><span class="text-dark font-weight-bold">username</span>: trucstre</li>
+						<li><span class="text-dark font-weight-bold">password</span>: 123</li>
+					</ul>
+					<a href="/" type="button" class="btn btn-primary">Go home</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

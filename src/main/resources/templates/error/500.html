@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments :: header">
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .bg {
+        /* The image used */
+        background-image: url("../../img/background1.jpg");
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .error-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #94ebcd;
+        padding: 15px 20px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .btnGoHome {
+        color: black;
+        padding: 7px 10px;
+        background-color: #ffefa1;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="bg"></div>
+    <div class="error-box d-flex">
+        <div>
+            <img th:src="@{/img/robot1.png}" alt="robot wanna say" />
+        </div>
+        <div class="pt-3 pl-3 text-center">
+            <h4>500</h4>
+            <h6 class="mb-3">SERVER ERROR</h6>
+            <h6>
+                <a class="btnGoHome" style="text-decoration: none" href="/">Go home</a>
+            </h6>
+        </div>
+    </div>
+</body>
+
+</html>

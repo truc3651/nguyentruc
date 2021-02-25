@@ -11,6 +11,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -24,9 +25,15 @@ public class MainController {
 	private JavaMailSender mailSender;
 	
 	@RequestMapping("/")
-	public String home(Model model) {
+	public String viewHome(Model model) {
 		model.addAttribute("contactForm", new ContactForm());
 		return "index";
+	}
+	
+	@RequestMapping("/{project}")
+	public String viewProject(@PathVariable("project")String project) {
+		if(project.equals("youtube")) return "project/youtube";
+		return "error/500";
 	}
 	
 	@PostMapping("/contact")
@@ -37,7 +44,7 @@ public class MainController {
 			sendMail(form);
 			ra.addFlashAttribute("mess", "Thank you for your concern!");
 		} catch (Exception e) {
-			ra.addFlashAttribute("mess", "Server got error, can't send your submit!");
+			ra.addFlashAttribute("mess", "Server got error, can't send your inquiry!");
 		}
 		return new RedirectView("/", true);
 	}
